@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+   background-color: rgb(7, 8, 8);
+   margin: 0;
+   padding: 0;
+}
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+section {
+    height: 500px;
+}
+
+/* for navigation scroll */
+section:before {
+    height: 65px;
+    content: "";
+    display: block;
+}
+
+/* removes row margins */
+.row {
+    margin: 0 auto;
+    max-width: 87.5em;
+    width: 100%;
+  }
+
+/*      HEADINGS/TEXT        */
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white
+}
+
+h3 {
+    text-align: center;
+
+}
+
+h4 {
+    padding: 15px 10px 5px 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+}
+
+/*      ICONS        */
+i {
+    font-size: 35px;
+    margin: 0 20px;
+}
+
+i:hover {
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.icon-nav:link,
+.icon-nav:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.github:hover {
+    color: rgb(244, 203, 178);
+    transition: .3s;
+}
+
+.instagram:hover {
+    color: rgb(195, 42, 163);
+    transition: .3s;
+}
+
+.linkedin:hover {
+    color: rgb(0, 119, 181);
+    transition: .3s;
+}
+
+.resume:hover {
+    color: rgb(0, 181, 15);
+    transition: .3s;
+}
+
+/********************************************************
+*                       NAVIGATION
+********************************************************/
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    border-bottom: 1px solid gray;
+    background-color: rgb(85, 85, 85) !important;
+    font-size: 25px;
+
+}
+
+.navbar-toggler {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    text-decoration: none;
+    margin: 0px 25px;
+    color: rgb(255, 255, 255) !important;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    text-decoration: none;
+    color: rgb(90, 174, 189) !important;
+    transition: .2s;
+}
+
+
+/********************************************************
+*                       HEADER
+********************************************************/
+#header-section {
+    background-color: rgb(195, 246, 255);
+    text-align: center;
+    height: 700px;
+    color: rgb(0, 0, 0);
+}
+
+#header-text {
+    padding-top: 230px;
+    color: rgb(0, 0, 0);
+}
+
+#header-h1 {
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+#header-h3 {
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/********************************************************
+*                       PROJECTS
+********************************************************/
+#projects-section {
+    background-color: rgb(90, 174, 189);
+    height: auto;
+    padding-bottom: 50px;
+}
+
+h6 {
+    text-align: center;
+    color: white;
+}
+
+.project {
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 30px 10px rgb(62, 118, 128);
+}
+
+.project p {
+    text-align: center;
+    padding: 30px 20px 0px 20px
+}
+
+.project a {
+    margin-top: 100px;
+}
+
+.project-img {
+    display: block;
+    margin: 0 auto;
+    width: 230px;
+    height: 200px;
+}
+
+.skill-group {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.skill-img {
+    display: inline-block;
+    width: 30px;
+    margin: 0 10px;
+}
+
+.skill-links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.skill-links button{
+    margin: 0 5px;
+    text-decoration: none;
+    background-color: rgb(195, 246, 255);
+    color: black;
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+.skill-links button:hover{
+    color: rgb(195, 246, 255);
+    background-color: rgb(0, 119, 181);
+    transition: .3s;
+}
+
+.skill-links a:link,
+.skill-links a:visited {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.skill-links a:hover,
+.skill-links a:active {
+    text-decoration: none;
+    color: white;
+}
+
+#skills {
+    margin-top: -20px;
+    padding-top: -30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#src-code:link,
+#src-code:visited {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    background-color: rgb(195, 246, 255);
+    color: black;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#src-code:hover,
+#src-code:active {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 119, 181);
+    transition: .3s;
+}
+
+/********************************************************
+*                       ABOUT
+********************************************************/
+#about-section {
+    height: auto;
+    padding-bottom: 50px;
+    background-color: rgb(62, 118, 128);
+}
+
+#about-info {
+    margin: 15px auto;
+    width: 75%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px 10px rgb(43, 79, 85);
+}
+
+#about-p {
+    padding: 40px;
+    line-height: 2em;
+    font-size: 20px;
+}
+
+
+/********************************************************
+*                       CONTACT
+********************************************************/
+#contact-section {
+    background-color: rgb(43, 79, 100);
+    height: auto;
+    padding: 20px 0;
+}
+
+#form-container {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+
+label {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+input, textarea {
+    margin: 0 auto;
+    padding: 5px 0;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#submit-btn, #reset-btn{
+    display: inline-block;
+    margin: 0 40px;
+    margin-top: 15px;
+    width: auto;
+    
+}
+
+#contact-btns {
+    text-align: center;
+}
+
+
+/********************************************************
+*                       FOOTER
+********************************************************/
+
+footer {
+    text-align: right;
+}
+
+.credit {
+    display: inline-block;
+    font-size: 12px;
+}
+
+/********************************************************
+*                       ANIMATIONS
+********************************************************/
+.js-wp-header,
+.js-wp-proj1,
+.js-wp-proj2,
+.js-wp-proj3,
+.js-wp-about,
+.js-wp-contact{
+    opacity: 0;
+    animation-duration: 1s;
+}
