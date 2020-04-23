@@ -140,6 +140,16 @@ i:hover {
     color: rgb(0, 0, 0);
 }
 
+#github-div,
+#linkedin-div,
+#resume-div {
+    display: inline;
+}
+
+#header-icons {
+    display: inline;
+}
+
 #header-h1 {
     font-size: 80px;
     font-family: 'Montserrat', sans-serif;
@@ -289,6 +299,29 @@ h6 {
     font-size: 20px;
 }
 
+#skill-h1 {
+    padding-top: 20px;
+}
+#skills-info {
+    margin: 25px auto;
+    width: 60%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px 10px rgb(43, 79, 85);
+}
+
+#skills-info h4{
+    font-weight: 400;
+    text-decoration: underline;
+    padding-bottom: 0px;
+}
+
+#skills-info ul {
+    list-style: none;
+    text-align: center;
+}
+
 
 /********************************************************
 *                       CONTACT
@@ -336,23 +369,31 @@ input, textarea {
 ********************************************************/
 
 footer {
-    text-align: right;
+    text-align: center;
+    background-color: rgb(1, 47, 71);
+    color: rgb(195, 246, 255);
+}
+
+footer a {
+    color: rgb(48, 48, 48);
 }
 
 .credit {
     display: inline-block;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 /********************************************************
 *                       ANIMATIONS
 ********************************************************/
 .js-wp-header,
+.js-wp-proj,
 .js-wp-proj1,
 .js-wp-proj2,
 .js-wp-proj3,
 .js-wp-about,
-.js-wp-contact{
+.js-wp-contact,
+.js-wp-skills{
     opacity: 0;
     animation-duration: 1s;
 }
