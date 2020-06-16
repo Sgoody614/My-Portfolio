@@ -27,6 +27,13 @@ $('.js-wp-proj2').waypoint(function(direction) {
     
 });
 
+$('.js-wp-proj-3').waypoint(function(direction) {
+    $('.js-wp-proj-3').addClass('animated fadeInLeft');
+}, {
+    offset: '40%'
+    
+});
+
 $('.js-wp-proj3').waypoint(function(direction) {
     $('.js-wp-proj3').addClass('animated fadeInUp');
 }, {
