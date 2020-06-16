@@ -220,6 +220,10 @@ h6 {
     text-align: center;
 }
 
+.wp {
+    width: 50px;
+}
+
 .skill-links button{
     margin: 0 5px;
     text-decoration: none;
@@ -390,6 +394,7 @@ footer a {
 .js-wp-proj,
 .js-wp-proj1,
 .js-wp-proj2,
+.js-wp-proj-3,
 .js-wp-proj3,
 .js-wp-about,
 .js-wp-contact,
